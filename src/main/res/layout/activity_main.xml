@@ -1,0 +1,130 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.javagame.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The head of the family is ?"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/father"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A: Father"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/mother"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B: Mother"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:layout_margin="10dp" />
+
+        <TextView
+            android:id="@+id/brother"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C: Brother"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:id="@+id/sister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D: Sister"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_margin="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        
+        <Button
+            android:id="@+id/a"
+            android:onClick="buttonA"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:textSize="25dp"
+            android:background="@drawable/roundbutton"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/b"
+            android:layout_toRightOf="@id/a"
+            android:onClick="buttonB"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:textSize="25dp"
+            android:background="@drawable/roundbutton"
+            android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/c"
+            android:layout_toRightOf="@id/b"
+            android:onClick="buttonC"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:textSize="25dp"
+            android:background="@drawable/roundbutton"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/d"
+            android:layout_toRightOf="@id/c"
+            android:onClick="buttonD"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="D"
+            android:textSize="25dp"
+            android:background="@drawable/roundbutton"
+            android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
